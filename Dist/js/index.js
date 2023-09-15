@@ -105,3 +105,4 @@ class Troca extends Geral {
     procurarPorUid() { }
     procurarPorSOlicitanteUidOuTitularUid() { }
 }
+//Agora precisamor organizar os códigos
