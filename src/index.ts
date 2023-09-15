@@ -97,3 +97,5 @@ class Troca extends Geral{
     
 }
 //Agora precisamor organizar os códigos
+//Existem algumas partes que provavelmente não vamos usar
+
