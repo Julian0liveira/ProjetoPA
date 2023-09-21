@@ -33,7 +33,7 @@ class Celular{
         return this.memoria;
     }
 
-    setValor(valor:string){
+    setValor(valor:number){
         this.valor = valor;
     }
     getValor(){
@@ -50,9 +50,9 @@ class Vendas{
     }
 
     somarValor(){
-        for(let value of this.produtos){
-            let valorTotal = 0;
-            valorTotal = this.produtos[value];
+        for(let i=0; i< this.produto.length; i++){
+            let valorTotal:any;
+            valorTotal = this.produto[i];
             valorTotal = valorTotal + valorTotal;
             console.log("Valor total de vendas: "+valorTotal);
         }
@@ -60,22 +60,22 @@ class Vendas{
 }
 
 let celular1 = new Celular();
-celular1.setNome = 'EDGE';
-celular1.setMarca = 'Motorola';
-celular1.setModelo = '200';
-celular1.setMemoria = '8GB';
-celular1.setValor = 1300;
+celular1.setNome('EDGE');
+celular1.setMarca('Motorola');
+celular1.setModelo('200');
+celular1.setMemoria('8GB');
+celular1.setValor(1300);
 
 let celular2 = new Celular();
-celular2.setNome = 'Galaxy';
-celular2.setMarca = 'Samsumg';
-celular2.setModelo = 'S21 Fe';
-celular2.setMemoria = '8GB';
-celular2.setValor = 1200;
+celular2.setNome('Galaxy');
+celular2.setMarca('Samsumg');
+celular2.setModelo('S21 Fe');
+celular2.setMemoria('8GB');
+celular2.setValor(1200);
 
 let totalCelular:Celular[] = [];
 totalCelular.push(celular1);
 totalCelular.push(celular2);
 
-let venda = new Vendas();
-venda.somarValor(totalCelular);
+//let venda = new Vendas();
+//venda.somarValor();
