@@ -51,9 +51,9 @@ class Vendas{
 
     somarValor(){
         for(let i=0; i< this.produto.length; i++){
-            let valorTotal:any;
-            valorTotal = this.produto[i];
-            valorTotal = valorTotal + valorTotal;
+            let valorTotal:any; //*************** 
+            valorTotal = this.produto[i].getValor;
+            valorTotal += valorTotal; //valorTotal;
             console.log("Valor total de vendas: "+valorTotal);
         }
     }
@@ -77,5 +77,9 @@ let totalCelular:Celular[] = [];
 totalCelular.push(celular1);
 totalCelular.push(celular2);
 
-//let venda = new Vendas();
-//venda.somarValor();
+console.log(celular1);
+
+
+
+let venda = new Vendas(totalCelular);
+venda.somarValor();
