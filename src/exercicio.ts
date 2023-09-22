@@ -50,12 +50,14 @@ class Vendas{
     }
 
     somarValor(){
+        let valorTotal:number;
         for(let i=0; i< this.produto.length; i++){
-            let valorTotal:any; //*************** 
-            valorTotal = this.produto[i].getValor;
-            valorTotal += valorTotal; //valorTotal;
-            console.log("Valor total de vendas: "+valorTotal);
+            //let valorTotal:any; //*************** 
+            valorTotal += this.produto[i].getValor;
+            //valorTotal += valorTotal; //valorTotal;
+            //console.log("Valor total de vendas: "+valorTotal);
         }
+        console.log("Valor total de vendas: "+valorTotal)
     }
 }
 
