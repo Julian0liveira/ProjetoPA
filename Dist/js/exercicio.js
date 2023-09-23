@@ -47,19 +47,13 @@ class Vendas {
         }
     }
     somarValor() {
-        let valorTotal = 0;
+        let valorTotal;
         for (let i = 0; i < this.produto.length; i++) {
-            valorTotal += this.produto[i].getValor();
+            valorTotal += this.produto[i].getValor;
             //valorTotal += valorTotal; //valorTotal;
+            console.log("Valor total de vendas: " + valorTotal);
         }
-        this.memoria.push(valorTotal);
         console.log("Valor total de vendas: " + valorTotal);
-    }
-    exibirMemoria() {
-        console.log("Imprimindo os valores da memoria: ");
-        for (let i = 0; i < this.memoria.length; i++) {
-            console.log(this.memoria[i] + ",");
-        }
     }
 }
 let celular1 = new Celular();
@@ -80,7 +74,7 @@ totalCelular.push(celular2);
 //console.log(celular1);
 let venda = new Vendas(totalCelular);
 venda.somarValor();
-venda.exibirMemoria();
+//venda.exibirMemoria();
 let celular3 = new Celular();
 celular3.setNome('Poco');
 celular3.setMarca('Xiaomi');
@@ -98,4 +92,4 @@ totalCelular2.push(celular3);
 totalCelular2.push(celular4);
 let venda2 = new Vendas(totalCelular2);
 venda2.somarValor();
-venda2.exibirMemoria();
+//venda2.exibirMemoria();

@@ -51,21 +51,13 @@ class Vendas{
     }
 
     somarValor(){
-        let valorTotal:number = 0;
-        for(let i=0; i< this.produto.length; i++){ 
-            valorTotal += this.produto[i].getValor();
+        let valorTotal:any;
+        for(let i=0; i< this.produto.length; i++){
+            valorTotal += this.produto[i].getValor;
             //valorTotal += valorTotal; //valorTotal;
+            console.log("Valor total de vendas: "+valorTotal);
         }
-        this.memoria.push(valorTotal);
         console.log("Valor total de vendas: "+valorTotal);
-
-    }
-
-    exibirMemoria(){
-        console.log("Imprimindo os valores da memoria: ");
-        for(let i=0; i < this.memoria.length; i++){
-            console.log(this.memoria[i]+",");
-        }
     }
 }
 
@@ -93,7 +85,7 @@ totalCelular.push(celular2);
 
 let venda = new Vendas(totalCelular);
 venda.somarValor();
-venda.exibirMemoria();
+//venda.exibirMemoria();
 
 let celular3 = new Celular();
 celular3.setNome('Poco');
@@ -115,4 +107,4 @@ totalCelular2.push(celular4);
 
 let venda2 = new Vendas(totalCelular2);
 venda2.somarValor();
-venda2.exibirMemoria();
+//venda2.exibirMemoria();
