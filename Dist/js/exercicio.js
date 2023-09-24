@@ -55,10 +55,12 @@ class Vendas {
         console.log("Valor total de vendas: " + this.valorTotal);
     }
     exibirMemoria() {
-        let exibir = 0;
-        for (let i = 0; i < this.memoria.length; i++) {
-            exibir = this.memoria[i];
-            console.log("Valor do indice " + i + ": " + exibir);
+        //let exibir = 0;
+        //for(let i=0; i < this.memoria.length; i++){
+        for (let value in this.memoria) {
+            //exibir = this.memoria[i];
+            //console.log("Valor do indice "+i+": "+exibir);
+            console.log("Valor do indice " + value + ": " + this.memoria[value]);
         }
     }
 }
