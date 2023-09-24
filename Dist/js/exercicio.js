@@ -80,7 +80,7 @@ totalCelular.push(celular2);
 //console.log(celular1);
 let venda = new Vendas(totalCelular);
 venda.somarValor();
-venda.exibirMemoria();
+//3venda.exibirMemoria();
 let celular3 = new Celular();
 celular3.setNome('Poco');
 celular3.setMarca('Xiaomi');
