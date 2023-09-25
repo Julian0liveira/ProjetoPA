@@ -79,10 +79,8 @@ celular2.setValor(150);
 let totalCelular = [];
 totalCelular.push(celular1);
 totalCelular.push(celular2);
-//console.log(celular1);
 let venda = new Vendas(totalCelular);
 venda.somarValor();
-//3venda.exibirMemoria();
 let celular3 = new Celular();
 celular3.setNome('Poco');
 celular3.setMarca('Xiaomi');
@@ -99,9 +97,3 @@ totalCelular.push(celular3);
 totalCelular.push(celular4);
 venda.somarValor();
 venda.exibirMemoria();
-/*let totalCelular2:Celular[] = [];
-totalCelular2.push(celular3);
-totalCelular2.push(celular4);*/
-/*let venda2 = new Vendas(totalCelular2);
-venda2.somarValor();
-venda2.exibirMemoria();*/

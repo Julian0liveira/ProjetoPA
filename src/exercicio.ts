@@ -9,7 +9,7 @@ class Celular{
         this.nome = nome;
     }
     getNome(){
-        return this.nome 
+        return this.nome; 
     }
 
     setMarca(marca:string){
@@ -69,7 +69,6 @@ class Vendas{
             console.log("Valor do indice "+value+": "+this.memoria[value]);
         }
     }
-
 }
 
 let celular1 = new Celular();
@@ -90,13 +89,8 @@ let totalCelular:Celular[] = [];
 totalCelular.push(celular1);
 totalCelular.push(celular2);
 
-//console.log(celular1);
-
-
-
 let venda = new Vendas(totalCelular);
 venda.somarValor();
-//3venda.exibirMemoria();
 
 let celular3 = new Celular();
 celular3.setNome('Poco');
@@ -117,10 +111,3 @@ totalCelular.push(celular4)
 
 venda.somarValor();
 venda.exibirMemoria();
-/*let totalCelular2:Celular[] = [];
-totalCelular2.push(celular3);
-totalCelular2.push(celular4);*/
-
-/*let venda2 = new Vendas(totalCelular2);
-venda2.somarValor();
-venda2.exibirMemoria();*/
